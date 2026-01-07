@@ -2,6 +2,14 @@
 
 This project explores how **humidity** relates to **electricity demand** across Australian states, and how the relationship changes under different temperatures.
 
+## Project Overview
+This repository analyses the relationship between **humidity and electricity demand** across Australian states using data from:
+
+- **AEMO** (electricity demand data)
+- **BOM** (humidity & temperature observations)
+
+The goal is to understand whether humidity affects electricity demand — especially under different temperature conditions — by using exploratory analysis and regression modelling with interaction effects.
+
 ## Project Highlights
 - Cleaned and merged **AEMO demand** with **BOM weather** data
 - Exploratory analysis across states and seasons
