@@ -5,8 +5,8 @@ This project explores how **humidity** relates to **electricity demand** across 
 ## Project Overview
 This repository analyses the relationship between **humidity and electricity demand** across Australian states using data from:
 
-- **AEMO** (electricity demand data)
-- **BOM** (humidity & temperature observations)
+- **AEMO demand data** (half-hourly electricity total demand for Australian states)
+- **Bureau of Meteorology weather files** containing humidity and temperature metrics
 
 The goal is to understand whether humidity affects electricity demand — especially under different temperature conditions — by using exploratory analysis and regression modelling with interaction effects.
 
@@ -48,7 +48,7 @@ This sample preserves the full schema and formatting of the original data and ca
 - When modelled jointly with temperature, **humidity exhibits a conditional effect**, becoming increasingly important at higher temperatures.
 - Marginal-effect analysis demonstrates that higher humidity **amplifies electricity demand during hot conditions**, consistent with increased cooling load and reduced thermal comfort.
 - State fixed effects account for substantial baseline differences in demand, reflecting population size, climate, and industrial structure.
-- Overall, the results highlight the importance of **model specification** and **interaction effects** when analysing weather–demand relationships.
+- Overall, findings suggest that humidity’s influence on electricity demand is **strongest when considered alongside temperature**, particularly in hotter conditions.
 
 ## How to Run
 1. Create an environment and install dependencies:
@@ -58,3 +58,9 @@ This sample preserves the full schema and formatting of the original data and ca
    `data/raw/demand/` (AEMO CSVs)
    `data/raw/weather/` (BOM files)
 3. Run the processing notebook, then the EDA notebook.
+
+## Future Work
+Possible extensions include:
+- Adding weather station coverage variation analysis
+- Including other variables like wind or solar exposure
+- Building a multivariate forecasting model for demand under humidity/temperature conditions
