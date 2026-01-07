@@ -218,9 +218,5 @@ __pycache__/
 
 # Data
 data/raw/
-
-# Ignore all processed CSVs
 data/processed/*.csv
-
-# BUT allow the sample file
 !data/processed/sample_master_data.csv
