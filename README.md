@@ -15,6 +15,24 @@ The goal is to understand whether humidity affects electricity demand — especi
 - Exploratory analysis across states and seasons
 - Regression with **non-linear temperature effects (Temperature²)** and **Humidity×Temperature interaction**
 - Marginal-effect plot showing humidity impact increases at higher temperatures
+
+## Tech Stack
+- **Programming Language:** Python
+- **Data Analysis:** pandas, NumPy
+- **Visualisation:** matplotlib, seaborn
+- **Machine Learning / Modelling:** scikit-learn
+- **Data Sources:** AEMO (electricity demand), Bureau of Meteorology (weather)
+- **Version Control:** Git, GitHub
+
+## Key Skills Demonstrated
+- Data cleaning and preprocessing of large time-series datasets
+- Merging heterogeneous data sources (energy demand and weather data)
+- Feature engineering, including non-linear and interaction terms
+- Exploratory data analysis across multiple geographic regions
+- Regression modelling and interpretation of coefficients
+- Marginal-effect analysis for interaction terms
+- Clear communication of results through visualisations and documentation
+- Reproducible project structure and version control using GitHub
   
 ## Repository Structure
 - `notebooks/`
