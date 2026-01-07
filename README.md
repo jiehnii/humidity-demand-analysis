@@ -15,14 +15,6 @@ The goal is to understand whether humidity affects electricity demand — especi
 - Exploratory analysis across states and seasons
 - Regression with **non-linear temperature effects (Temperature²)** and **Humidity×Temperature interaction**
 - Marginal-effect plot showing humidity impact increases at higher temperatures
-
-## Results
-- Exploratory analysis shows that **humidity alone has a weak direct relationship** with electricity demand across states.
-- Electricity demand is primarily driven by **temperature**, with strong non-linear effects captured using a quadratic temperature term.
-- When modelled jointly with temperature, **humidity exhibits a conditional effect**, becoming increasingly important at higher temperatures.
-- Marginal-effect analysis demonstrates that higher humidity **amplifies electricity demand during hot conditions**, consistent with increased cooling load and reduced thermal comfort.
-- State fixed effects account for substantial baseline differences in demand, reflecting population size, climate, and industrial structure.
-- Overall, the results highlight the importance of **model specification** and **interaction effects** when analysing weather–demand relationships.
   
 ## Repository Structure
 - `notebooks/`
@@ -48,6 +40,15 @@ This sample preserves the full schema and formatting of the original data and ca
 | Total Demand     | Electricity demand (MW)                      |
 | Humidity (%)     | Relative humidity (%)                        |
 | Temperature      | Air temperature (°C)                         |
+
+
+## Results
+- Exploratory analysis shows that **humidity alone has a weak direct relationship** with electricity demand across states.
+- Electricity demand is primarily driven by **temperature**, with strong non-linear effects captured using a quadratic temperature term.
+- When modelled jointly with temperature, **humidity exhibits a conditional effect**, becoming increasingly important at higher temperatures.
+- Marginal-effect analysis demonstrates that higher humidity **amplifies electricity demand during hot conditions**, consistent with increased cooling load and reduced thermal comfort.
+- State fixed effects account for substantial baseline differences in demand, reflecting population size, climate, and industrial structure.
+- Overall, the results highlight the importance of **model specification** and **interaction effects** when analysing weather–demand relationships.
 
 ## How to Run
 1. Create an environment and install dependencies:
