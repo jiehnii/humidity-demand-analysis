@@ -25,8 +25,14 @@ This project explores how **humidity** relates to **electricity demand** across 
    `data/raw/weather/` (BOM files)
 3. Run the processing notebook, then the EDA notebook.
 
-## Notes
-Raw datasets are not included due to size. The notebooks use relative paths so they run after cloning.
+## Data Availability
+
+Due to file size constraints, full raw and processed datasets are not included in this repository.
+
+A small **processed sample dataset** is provided in:
+- `data/processed/sample_master_data.csv`
+
+This sample preserves the full schema and formatting of the original data and can be used to run and inspect the notebooks. Instructions for reproducing the full dataset are provided in the notebooks.
 
 ## Results
 
